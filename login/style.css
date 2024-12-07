@@ -1,0 +1,12 @@
+
+
+.direita{
+    background-color: #35FF27;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+
+}
+
