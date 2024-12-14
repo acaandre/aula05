@@ -1,0 +1,103 @@
+body{ /*Não precisa do . pq é uma tag semantica*/
+    margin: 0; /*Sem espaçamento externo*/
+    padding: 0; /*Sem espaçamento interno*/
+    font-family: Arial, Helvetica, sans-serif; /*Fonte Padrão das letras*/
+
+}
+
+a { 
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{ /*Precisa do . pq é uma div class*/
+    width: 100%;
+    height: 100vh;
+}
+
+.container .navegacao .logo img{
+    width: 80px;
+}
+
+.container .navegacao{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px; /*Primeiro vertical depois horizontal*/
+}
+
+.container .navegacao .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .navegacao .links{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.container .navegacao .links nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.container .navegacao .links button{
+    border: none;
+    background-color: transparent;
+    margin-right: 40px;
+}
+
+.container .navegacao .links button i{
+    font-size: 20px;
+}
+
+.container main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.container main .esquerda{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.container main .direita{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container main .direita .secao-1 span{
+    background-color: #58AF9C;
+    padding: 10px 5px;
+    border-radius: 50px;
+    color: white;
+}
+
+.container main .direita .secao-2 .botoes{
+    display: flex;
+    gap: 10px;
+}
+
+#secundario{
+    background-color: #58AF9C;
+}
+
+.botoes .botao {
+    padding: 40px;
+}
+
+.botoes .primario {
+    background-color: #9fc7be;
+}
