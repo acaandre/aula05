@@ -21,7 +21,7 @@ ul{
 }
 
 .container .navegacao .logo img{
-    width: 80px;
+    width: 50px;
 }
 
 .container .navegacao{
@@ -59,7 +59,7 @@ ul{
 
 .container main{
     display: flex;
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 
@@ -68,6 +68,7 @@ ul{
     width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .container main .direita{
@@ -88,16 +89,79 @@ ul{
 .container main .direita .secao-2 .botoes{
     display: flex;
     gap: 10px;
+    transition: all 900ms ease;
+
 }
 
-#secundario{
-    background-color: #58AF9C;
+.container main .direita .secao-2 .botoes .secundario{    /* Quando eu utilizar ID, você para estilizar é só chamar o jogo da velha e o nome do id que ele já referencia.*/
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 500ms ease;
 }
 
-.botoes .botao {
+.container main .direita .secao-2 .botoes .secundario:hover{
+    border: 1px solid #20816c;   
+}
+
+.container main .direita .secao-2 .botoes .secundario a{
+    color: #20816c;   
+}
+
+.container main .direita .secao-2 .botoes .botao{
     padding: 10px;
+    border-radius: 10px;
 }
 
-.botoes .primario {
-    background-color: #9fc7be;
+/* Quando utilizar uma subclasse, você precisa referenciar o caminho*/
+.container main .direita .secao-2 .botoes .primario{
+    border: none; 
+    background-color: #58AF9C;
+    transition: all 500ms ease;
+    /* transition para fazer a transição do hover mais suave*/
 }
+
+.container main .direita .secao-2 .botoes .primario:hover{
+    border: none; 
+    background-color: #20816c;
+}
+
+
+.container main .direita .secao-2 .botoes .primario a{
+    color: white;
+}
+
+.container main .esquerda img{
+    width: 70%;
+    display: flex;
+    align-items: center;
+
+}
+
+.container footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.container footer .esquerda{
+    width: 50%;
+}
+
+.container footer .direita{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    }
+
+.container footer .direita .redes-sociais{
+        display: flex;
+        gap: 10px;
+    }
+
+.container footer .direita .redes-sociais i{
+    font-size: 30px;
+}
+
+/* se tiver a classe secundária - .container main .direita .secao-2 .botoes .secundario*/
